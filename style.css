@@ -1,0 +1,103 @@
+body{
+  font-family: "Open Sans",sans-serif;
+  background-color: black;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 120%;
+}
+#container{
+  width: 1000px;
+  height: 550px;
+  margin: 20px auto;  /* content goes to the center */
+}
+#calculator{
+  width: 320px;
+  height: 520px;
+  background-color: #eaedef;
+  margin: 0 auto; /* calculator to be at the center */
+  top: 20px;
+  position: relative;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+  height: 120px;
+  background-color: #bbdaee;
+  margin: 0 auto; /* calculator to be at the center */
+  width: 301px;
+  height: 115px;
+  top: 10px;
+  position: relative;
+  border-radius: 16px;
+
+}
+#history{
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #7c7b7b;
+}
+#output{
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+#keyboard{
+  height: 400px;
+  top: 15px;
+  position: relative;
+
+}
+.operator, .number, .empty{
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+.number, .empty{
+  background-color: #eaedef;
+}
+/* giving the operators and numbers a pointer whenever pointed */
+.number, .operator{
+  cursor: pointer;
+}
+/* giving style when the user clicks*/
+.operator:active, .number:active{
+  font-size: 13px;
+}
+/* removing outline */
+.operator:focus, .number:focus, .empty:focus{
+  outline:0;
+}
+/* Style for the operators button (which appers the 4th button in the html in the keyboard container) */
+button:nth-child(4){
+  font-size: 20px;
+  background-color: #20b2aa;
+}
+button:nth-child(8){
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(12){
+  font-size: 20px;
+  background-color: #f08080;
+}
+button:nth-child(16){
+  font-size: 20px;
+  background-color: #7d93e1;
+}
+button:nth-child(20){
+  font-size: 20px;
+  background-color: #9477af;
+}
